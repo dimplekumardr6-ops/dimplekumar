@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Reg form</title>
+  </head>
+  <body>
+    <h1>Course regestration form</h1>
+    <form >
+      <fieldset>
+        <legend>Personal Details</legend>
+        <table>
+          <tr>
+            <td><label for="fname">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                name="fname"
+                placeholder="Ex:dimple"
+                maxlength="15"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="sname">Surname</label></td>
+            <td>
+              <input
+                type="text"
+                name="sname"
+                placeholder="Ex:DR"
+                maxlength="10"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobnum">Mobile Number</label></td>
+            <td>
+              <input type="tel" name="mobnum" placeholder="123-2022-2222" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email</label></td>
+            <td>
+              <input
+                type="email"
+                name="email"
+                placeholder="Ex:example@gmail.com"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pwd">Password</label></td>
+            <td><input type="password" name="pwd" maxlength="8" /></td>
+          </tr>
+          <tr>
+            <td><label for="cpwd">Confirm Password</label></td>
+            <td><input type="password" name="cpwd" maxlength="8" /></td>
+          </tr>
+          <tr>
+            <td><label for="dob">DOB</label></td>
+            <td><input type="date" name="dob" /></td>
+          </tr>
+          <tr>
+            <td><label for="gender">Gender</label></td>
+            <td>
+              <input type="radio" name="gender" value="M" /><label>Male</label>
+              <input type="radio" name="gender" value="F" /><label
+                >Female</label
+              >
+              <input type="radio" name="gender" value="O" /><label
+                >Others</label
+              >
+            </td>
+          </tr>
+          <tr>
+            <td><label for="country">Select Country</label></td>
+            <td>
+              <select name="country">
+                <option value="INDIA">INDIA</option>
+                <option value="USA">USA</option>
+                <option value="UK">UK</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="Picture">Upload Picture</label></td>
+            <td><input type="file" name="Picture" /></td>
+          </tr>
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course details</legend><br>
+            <label for="course">Select Course</label></td>
+              <select name="course">
+                <option value="PFS">Python Full stack</option>
+                <option value="JFS">Java Full stack</option>
+                <option value="FD">Frontend development</option>
+                <option value="BD">Backend development</option>
+              </select><br>
+            <label for="Mode">Deliver Mode</label></td>
+            
+              <input type="checkbox" name="Mode1" value="ON" /><label
+                >Online</label
+              >
+              <input type="checkbox" name="Mode2" value="OFF" /><label
+                >Offline</label><br>
+            <label for="Inname">Institute name</label>
+              <input type="text" placeholder="Ex:College name" name="Inname" /><br>
+            <label>Choose your present coding knowledge level</label><br>
+          <input type="range" /><br>
+          <label>Comments</label><br>
+          <textarea rows="4" cols="40" ></textarea><br>
+          <input style="background-color: steelblue; font-style: oblique;" type ="submit"/>
+      </fieldset>
+    </form>
+  </body>
+</html>
+
