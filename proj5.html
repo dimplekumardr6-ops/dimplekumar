@@ -7,7 +7,7 @@
   </head>
   <body>
     <h1>Course regestration form</h1>
-    <form >
+    <form>
       <fieldset>
         <legend>Personal Details</legend>
         <table>
@@ -92,31 +92,62 @@
           </tr>
         </table>
       </fieldset>
+
       <fieldset>
-        <legend>Course details</legend><br>
-            <label for="course">Select Course</label></td>
-              <select name="course">
+        <legend>Course details</legend>
+        <table>
+          <tr>
+            <td><label for="course">Select Course</label></td>
+            <td>
+              <select name="course" id="course" size="1" width="20%">
+                <option>---Select Course---</option>
                 <option value="PFS">Python Full stack</option>
                 <option value="JFS">Java Full stack</option>
                 <option value="FD">Frontend development</option>
                 <option value="BD">Backend development</option>
-              </select><br>
-            <label for="Mode">Deliver Mode</label></td>
-            
+              </select>
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Mode">Deliver Mode</label></td>
+            <td>
               <input type="checkbox" name="Mode1" value="ON" /><label
                 >Online</label
               >
               <input type="checkbox" name="Mode2" value="OFF" /><label
-                >Offline</label><br>
-            <label for="Inname">Institute name</label>
-              <input type="text" placeholder="Ex:College name" name="Inname" /><br>
-            <label>Choose your present coding knowledge level</label><br>
-          <input type="range" /><br>
-          <label>Comments</label><br>
-          <textarea rows="4" cols="40" ></textarea><br>
-          <input style="background-color: steelblue; font-style: oblique;" type ="submit"/>
+                >Offline</label
+              ><br />
+            </td>
+          </tr>
+
+          <tr>
+            <td><label for="Inname">Institute name</label></td>
+            <td>
+              <input type="text" placeholder="Ex:College name" name="Inname" />
+            </td>
+          </tr>
+        </table>
+
+        <table>
+          <tr>
+            <td>
+              <label>Choose your present coding knowledge level</label><br />
+              <input type="range" /><br />
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <label>Comments</label><br />
+              <textarea rows="4" cols="40"></textarea><br />
+            </td>
+          </tr>
+        </table>
+        <input
+          style="background-color: steelblue; font-style: oblique"
+          type="submit"
+        />
       </fieldset>
     </form>
   </body>
 </html>
-
